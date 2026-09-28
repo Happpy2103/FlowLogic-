@@ -1,0 +1,80 @@
+.dashboard-layout {
+  min-height: 100vh;
+
+  background-image:
+    linear-gradient(
+      rgba(248, 250, 252, 0.88),
+      rgba(248, 250, 252, 0.88)
+    ),
+    url("/images/dashboard-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.dashboard-header {
+  background: var(--fl-header-bg);
+  color: var(--fl-text);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  padding: 16px 28px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90px;
+  height: auto !important;
+  line-height: normal !important;
+}
+
+.dashboard-header-title {
+  margin: 0 !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+  color: var(--fl-text) !important;
+}
+
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dashboard-avatar {
+  background: var(--fl-accent) !important;
+  color: var(--fl-accent-fg) !important;
+}
+
+.dashboard-content {
+  margin: 20px;
+  padding: 24px;
+  background: var(--fl-bg-subtle);
+  border-radius: 20px;
+  min-height: calc(100vh - 110px);
+  background: transparent !important;
+}
+.dashboard-layout > .app-sidebar {
+  background: #ffffff !important;
+}
+.dashboard-page-header {
+  background: var(--fl-bg-elevated);
+  border: 1px solid var(--fl-border);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.dashboard-page-header h2 {
+  margin-bottom: 4px !important;
+  color: var(--fl-text) !important;
+}
+
+.ant-card-hoverable {
+  transition: all 0.25s ease;
+}
+
+.ant-card-hoverable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}

@@ -1,0 +1,94 @@
+:root,
+[data-theme="light"] {
+  --fl-bg: #ffffff;
+  --fl-bg-subtle: #f5f7fb;
+  --fl-bg-muted: #fafafa;
+  --fl-bg-elevated: #ffffff;
+  --fl-border: #f0f0f0;
+  --fl-border-strong: #e8e8e8;
+  --fl-text: #141414;
+  --fl-text-secondary: #8c8c8c;
+  --fl-text-muted: #595959;
+  --fl-accent: #141414;
+  --fl-accent-fg: #ffffff;
+  --fl-accent-hover: #262626;
+  --fl-sidebar-bg: #ffffff;
+  --fl-header-bg: #ffffff;
+  --fl-menu-hover: #fafafa;
+  --fl-menu-active: #f5f5f5;
+  --fl-chart-grid: #f0f0f0;
+  --fl-chart-axis: #8c8c8c;
+  --fl-chart-bar: #141414;
+  --fl-radius-lg: 18px;
+  --fl-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --fl-tip-bg: linear-gradient(135deg, #e6f4ff 0%, #f9f0ff 100%);
+}
+
+[data-theme="dark"] {
+  --fl-bg: #0a0a0a;
+  --fl-bg-subtle: #111111;
+  --fl-bg-muted: #1a1a1a;
+  --fl-bg-elevated: #141414;
+  --fl-border: #262626;
+  --fl-border-strong: #333333;
+  --fl-text: #f5f5f5;
+  --fl-text-secondary: #a3a3a3;
+  --fl-text-muted: #d4d4d4;
+  --fl-accent: #f5f5f5;
+  --fl-accent-fg: #141414;
+  --fl-accent-hover: #e5e5e5;
+  --fl-sidebar-bg: #0a0a0a;
+  --fl-header-bg: #0a0a0a;
+  --fl-menu-hover: #1a1a1a;
+  --fl-menu-active: #1f1f1f;
+  --fl-chart-grid: #262626;
+  --fl-chart-axis: #a3a3a3;
+  --fl-chart-bar: #e8e8e8;
+  --fl-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --fl-tip-bg: linear-gradient(135deg, #1a1a2e 0%, #1a1a1a 100%);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--fl-bg);
+  color: var(--fl-text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.fl-card { 
+   background: var(--fl-bg-elevated) !important;
+  border-color: var(--fl-border) !important;
+  color: var(--fl-text) !important;
+  border-radius: var(--fl-radius-lg) !important;
+  
+}
+
+.fl-surface {
+  background: var(--fl-bg-muted) !important;
+  border: 1px solid var(--fl-border);
+  border-radius: 14px;
+}
+
+.fl-feature-tile {
+  display: flex;
+  gap: 14px;
+  padding: 16px;
+  border-radius: 14px;
+  background: var(--fl-bg-muted);
+  border: 1px solid var(--fl-border);
+  transition: background 0.2s ease;
+}
+
+.fl-feature-tile--clickable {
+  cursor: pointer;
+}
+
+.fl-feature-tile--clickable:hover {
+  background: var(--fl-menu-hover);
+}
